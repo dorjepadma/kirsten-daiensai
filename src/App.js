@@ -20,7 +20,7 @@ function App() {
           href="https://serpentpainting.com"
           target="_blank"
           rel="noopener noreferrer"
-        >While you are here visit:
+        >While you are here visit his Grandson's site:
           Serpent Paintings
         </a>
         <HomePage/>

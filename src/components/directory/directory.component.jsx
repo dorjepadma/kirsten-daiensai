@@ -2,11 +2,11 @@ import React from 'react';
 
 import MenuItem from '../menuItem/menuItem.component';
 
-import Teddy_Bear_1 from '../../assets/Images/Teddy_Bear_1.jpg';
-import stars from '../../assets/Images/stars2.png';
-import solarSystem from '../../assets/Images/solarSystem.jpg';
-import starMusic from '../../assets/Images/starMusic.jpg';
-import zodiac from '../../assets/Images/zodiac.png';
+import PassionBuddha from '../../assets/Images/PassionBuddha.jpg';
+import LuminousBuddha from '../../assets/Images/LuminousBuddha.jpg';
+import RavenTotem from '../../assets/Images/RavenTotem.jpg';
+import WhiteSerpent from '../../assets/Images/WhiteSerpent.jpg';
+import PassionDai from '../../assets/Images/PassionDai.jpg';
 
 import './directory.styles.scss'
 
@@ -16,34 +16,34 @@ class Directory extends React.Component {
 
     this.state = {
       sections: [{
-        title: 'What is a Birth Tune Bear',
-        subTitle: 'The story of Birth Tune Bears',
-        imageUrl: [zodiac],
+        title: `Daiensai's Life Story`,
+        subTitle: 'The story Richard Kirsten Daiensai',
+        imageUrl: [PassionDai],
         id: 1
       },
       {
-        title: 'The Astral Synth',
-        subTitle: 'What is the Astral Synth',
-        imageUrl: [stars],
+        title: 'Prints',
+        subTitle: 'Daiensai Prints',
+        imageUrl: [PassionBuddha],
         id: 2
       },
       {
-        title: 'What is an Astral Tune',
-        subTitle: 'What is an astral Tune',
-        imageUrl: [solarSystem],
+        title: 'Daiensai Philosophy',
+        subTitle: 'Daiensai merged eastern and western mysticism',
+        imageUrl: [RavenTotem],
         id: 3
       },
       {
-        title: 'Your Birth Tune',
-        subTitle: 'Make your birth tune',
-        imageUrl: [starMusic],
+        title: 'Sacred Serpent Paintings',
+        subTitle: 'A single brush stroke tradition',
+        imageUrl: [WhiteSerpent],
         size: 'large',
         id: 4
       },
       {
-        title: 'Birth Tune Bears',
-        subTitle: 'Choose your bear',
-        imageUrl: [Teddy_Bear_1],
+        title: 'The paintings of Daiensai',
+        subTitle: 'Original Art Work of Daiensai',
+        imageUrl: [LuminousBuddha],
         size: 'large',
         id: 5
       }]
