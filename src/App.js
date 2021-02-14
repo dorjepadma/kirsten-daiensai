@@ -17,6 +17,14 @@ function App() {
         <p> Great Men live extraordinary lives</p>
         <a
           className="App-link"
+          href="http://http://honshinfineart.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >While you are here visit his son Honshin's site:
+          Honshin Fine Arts
+        </a>
+        <a
+          className="App-link"
           href="https://serpentpainting.com"
           target="_blank"
           rel="noopener noreferrer"
