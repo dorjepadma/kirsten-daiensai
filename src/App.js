@@ -15,6 +15,7 @@ function App() {
           Welcome to the future site of Kirsten-Daiensai. 
         </h2>
         <p> Great Men live extraordinary lives</p>
+        <div>
         <a
           className="App-link"
           href="http://http://honshinfineart.com/"
@@ -23,6 +24,8 @@ function App() {
         >While you are here visit his son Honshin's site:
           Honshin Fine Arts
         </a>
+        </div>
+        <div>
         <a
           className="App-link"
           href="https://serpentpainting.com"
@@ -31,6 +34,7 @@ function App() {
         >While you are here visit his Grandson's site:
           Serpent Paintings
         </a>
+        </div>
         <HomePage/>
     
     </div>
