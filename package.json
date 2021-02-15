@@ -1,5 +1,6 @@
 {
   "name": "kirsten-daiensai",
+  "homepage":"http:kirsten-daiensai.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +8,14 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "babel-install": "^2.1.0",
+    "babel-jest": "^26.6.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
+    "sass": "^1.32.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
