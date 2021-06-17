@@ -17,7 +17,7 @@ class Directory extends React.Component {
     this.state = {
       sections: [{
         title: `Daiensai's Life Story`,
-        subTitle: 'The story Richard Kirsten Daiensai',
+        subTitle: 'The myth of Richard Kirsten Daiensai',
         imageUrl: [PassionDai],
         id: 1
       },
@@ -29,7 +29,7 @@ class Directory extends React.Component {
       },
       {
         title: 'Daiensai Philosophy',
-        subTitle: 'Daiensai merged eastern and western mysticism',
+        subTitle: 'Merging eastern and western mysticism',
         imageUrl: [RavenTotem],
         id: 3
       },
@@ -51,7 +51,7 @@ class Directory extends React.Component {
   }
   render() {
     return (
-      <div className='directoryMenu'>
+      <div className='directory-menu'>
         {this.state.sections.map( ({ title, subTitle, imageUrl, id, size }) => (
           <MenuItem key={id} title={title} subTitle={subTitle} imageUrl={imageUrl} size={size}/>
         ))}

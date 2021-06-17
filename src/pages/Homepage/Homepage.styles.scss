@@ -2,53 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 80px;
-}
-
-.directoryMenu {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.menuItem {
-  min-width: 30%;
-  height: 240px;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
+}
 
-  &:first-child {
-    margin-right: 7.5px;
-  }
+.daiensaiCard {
+  margin:1em;
+  padding:1em;
+  transition: 
+  transform .4s,
+  background-color .4s,
+  box-shadow .4s;
+}
 
-  &:last-child {
-    margin-left: 7.5px;
-  }
+.daiensaiCard:hover {
+  box-shadow: 0 15px 30px rgb(0 0 0 / 20%);
+  background-color: rgba (237, 248, 255, .52);
+  cursor: pointer; 
+  transform: translate(0, -4px)
+}
 
-  .content {
-    height: 90px;
-    padding: 0 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-
-    .title {
-      font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 22px;
-      color: #4a4a4a;
-    }
-
-    .subtitle {
-      font-weight: lighter;
-      font-size: 16px;
-    }
-  }
+.lineageLink {
+  color: #1ab2db;
 }
