@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-import Directory from '../../components/directory/directory.component';
 
-import ZenDaiensai from '../../assets/Images/ZenDaiensai.jpg';
+import Directory from '../../directory/directory.component';
+
+import ZenDaiensai from '../../../assets/Images/ZenDaiensai.jpg';
 import './Homepage.styles.scss';
 
 const HomePage = () => (

@@ -6,8 +6,15 @@
 }
 
 .daiensaiCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin:1em;
   padding:1em;
+  border:1px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   transition: 
   transform .4s,
   background-color .4s,
