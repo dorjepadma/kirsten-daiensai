@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MenuItem from '../menuItem/menuItem.component';
+import CategoryItem from '../categoryItem/CategoryItem.component';
 
 import PassionBuddha from '../../assets/Images/PassionBuddha.jpg';
 import LuminousBuddha from '../../assets/Images/LuminousBuddha.jpg';
@@ -51,9 +51,9 @@ class Directory extends React.Component {
   }
   render() {
     return (
-      <div className='directory-menu'>
+      <div className='directory-container'>
         {this.state.sections.map( ({ title, subTitle, imageUrl, id, size }) => (
-          <MenuItem key={id} title={title} subTitle={subTitle} imageUrl={imageUrl} size={size}/>
+          <CategoryItem key={id} title={title} subTitle={subTitle} imageUrl={imageUrl} size={size}/>
         ))}
       </div>
     )

@@ -1,9 +1,10 @@
 import React from 'react';
 
-import './menuItem.styles.scss'
+import './CategoryItem.styles.scss'
 
-const MenuItem = ({ title, subTitle, imageUrl, size }) => (
-  <div className={`${size} menu-item`}
+//the entire directory is received as a prop from the parent component
+const CategoryItem = ({ title, subTitle, imageUrl, size }) => (
+  <div className={`${size} category-item`}
   //  onClick={() => history.push(`${match.url}${linkUrl}`)}
    >
     <div className='background-image' style={{ backgroundImage: `url(${imageUrl})`}}/>
@@ -15,4 +16,4 @@ const MenuItem = ({ title, subTitle, imageUrl, size }) => (
   </div>
 )
 
-export default MenuItem;
+export default CategoryItem;
