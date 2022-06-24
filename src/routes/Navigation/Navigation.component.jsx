@@ -5,7 +5,6 @@ import DaiensaiLogo from '../../assets/Images/DaiensaiLogo.png';
 import './Navigation.styles.scss';
 
 
-
 const Navigation = () => {
   return (
     <>
@@ -17,7 +16,7 @@ const Navigation = () => {
       </div>
       </Link>
       <div className='nav-links-container'> 
-      <Link className='nav-link' to='/home'> Home</Link>
+      <Link className='nav-link' to='/home'>Home</Link>
       <Link className='nav-link' to='/prints'>Prints</Link>
       <Link className='nav-link' to='/daiensaiPaintings'>Paintings</Link>
       <Link className='nav-link' to='/philosophy'>Philosophy</Link>

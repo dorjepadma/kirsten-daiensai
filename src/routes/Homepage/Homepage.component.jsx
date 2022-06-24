@@ -1,5 +1,5 @@
+import { Outlet } from 'react-router-dom';
 import React from 'react';
-import { Card } from 'react-bootstrap';
 
 
 import Directory from '../../components/Directory/directory.component';
@@ -12,7 +12,8 @@ import ZenDaiensai from '../../assets/Images/ZenDaiensai.jpg';
 
 import './Homepage.styles.scss';
 
-const HomePage = () => {
+
+const Home = () => {
   const categories = [{
     title: `Daiensai's Life Story`,
     subTitle: 'The myth of Richard Kirsten Daiensai',
@@ -44,22 +45,20 @@ const HomePage = () => {
     imageUrl: [LuminousBuddha],
     size: 'large',
     id: 5
-  }]
+  }];
 
   return (
   <div className='homepage'>
     <div>
-    <Card className="daiensaiCard">
+    <div className="daiensaiCard">
       <img src={ZenDaiensai} alt="Richard Kirsten Daiensai" />
         <h2>
           Richard Kirsten-Daiensai. 
         </h2>
         <p> Great Men live extraordinary lives</p>
-    </Card>
     </div>
-    
-      <Directory/>
-    
+    </div>
+    <Directory categories={categories} />
     <div>
       <a
           className="lineageLink"
@@ -79,8 +78,9 @@ const HomePage = () => {
         >While you are here visit his Grandson Dorje Shinno's site:
           Serpent Paintings
         </a>
-        </div>    
+        </div>  
+        <Outlet />  
   </div>
   )
 }
-export default HomePage
+export default Home
