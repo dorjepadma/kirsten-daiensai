@@ -1,0 +1,42 @@
+
+// .signInPage {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   margin: 10px;
+// }
+// .signInTitle {
+//   font-size: 2rem;
+//   margin: 10px;
+// }
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  background-color: #f5f5f5; 
+  height: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-color: #000000;
+  border: solid;
+  -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    box-shadow: 0 10px 20px black
+  
+ 
+
+  h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+}
+.buttonsContainer  {
+  display: flex;
+  justify-content: space-between;
+
+ 
+}
+

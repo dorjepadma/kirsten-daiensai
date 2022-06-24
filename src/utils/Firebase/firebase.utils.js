@@ -1,5 +1,10 @@
 import { initializeApp, getAnalytics } from 'firebase/app';
-import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
+import { getAuth, 
+  signInWithRedirect, 
+  signInWithPopup, 
+  GoogleAuthProvider, 
+  FacebookAuthProvider,
+  createUserWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -56,7 +61,13 @@ if(!userSnapshot.exists()) {
   
 }
 return userDocRef
-
 //return user data
-
+}
+export const createAuthUserWithEmailAndPassword = async (email, password) => {
+  try {
+    const authUserCredential = await createUserWithEmailAndPassword(email, password);
+    return authUserCredential.user;
+  } catch (error) {
+    console.log('error creating user', error.message);
+  }
 }
