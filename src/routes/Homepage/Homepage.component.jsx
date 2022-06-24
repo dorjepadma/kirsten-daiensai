@@ -2,12 +2,51 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 
-import Directory from '../../directory/directory.component';
+import Directory from '../../components/Directory/directory.component';
+import PassionBuddha from '../../assets/Images/PassionBuddha.jpg';
+import LuminousBuddha from '../../assets/Images/LuminousBuddha.jpg';
+import RavenTotem from '../../assets/Images/RavenTotem.jpg';
+import WhiteSerpent from '../../assets/Images/WhiteSerpent.jpg';
+import PassionDai from '../../assets/Images/PassionDai.jpg';
+import ZenDaiensai from '../../assets/Images/ZenDaiensai.jpg';
 
-import ZenDaiensai from '../../../assets/Images/ZenDaiensai.jpg';
 import './Homepage.styles.scss';
 
-const HomePage = () => (
+const HomePage = () => {
+  const categories = [{
+    title: `Daiensai's Life Story`,
+    subTitle: 'The myth of Richard Kirsten Daiensai',
+    imageUrl: [PassionDai],
+    id: 1
+  },
+  {
+    title: 'Prints',
+    subTitle: 'Daiensai Prints',
+    imageUrl: [PassionBuddha],
+    id: 2
+  },
+  {
+    title: 'Daiensai Philosophy',
+    subTitle: 'Merging eastern and western mysticism',
+    imageUrl: [RavenTotem],
+    id: 3
+  },
+  {
+    title: 'Sacred Serpent Paintings',
+    subTitle: 'A single brush stroke tradition',
+    imageUrl: [WhiteSerpent],
+    size: 'large',
+    id: 4
+  },
+  {
+    title: 'The paintings of Daiensai',
+    subTitle: 'Original Art Work of Daiensai',
+    imageUrl: [LuminousBuddha],
+    size: 'large',
+    id: 5
+  }]
+
+  return (
   <div className='homepage'>
     <div>
     <Card className="daiensaiCard">
@@ -42,6 +81,6 @@ const HomePage = () => (
         </a>
         </div>    
   </div>
-  
-)
+  )
+}
 export default HomePage

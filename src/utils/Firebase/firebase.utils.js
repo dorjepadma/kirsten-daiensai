@@ -1,10 +1,11 @@
-import { initializeApp, getAnalytics } from 'firebase/app';
+import { initializeApp } from 'firebase/app';
 import { getAuth, 
   signInWithRedirect, 
   signInWithPopup, 
   GoogleAuthProvider, 
   FacebookAuthProvider,
-  createUserWithEmailAndPassword } from 'firebase/auth';
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -39,7 +40,11 @@ export const signInWithFacebookRedirect = () => signInWithRedirect(auth, faceboo
 
 export const db = getFirestore();
 
-export const createUserDocumentFromAuth = async (userAuth) => {
+export const createUserDocumentFromAuth = async (
+  userAuth,
+  additonalInformation = { displayName: '' }
+  ) => {
+  if (!userAuth) return;
   const userDocRef = doc(db, 'users', userAuth.uid);
 
 const userSnapshot = await getDoc(userDocRef);
@@ -54,6 +59,7 @@ if(!userSnapshot.exists()) {
       displayName,
       email,
       createdAt,
+      ...additonalInformation
     });
   } catch (error) {
     console.log('error creating user', error.message);
@@ -64,10 +70,10 @@ return userDocRef
 //return user data
 }
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
-  try {
-    const authUserCredential = await createUserWithEmailAndPassword(email, password);
-    return authUserCredential.user;
-  } catch (error) {
-    console.log('error creating user', error.message);
-  }
+  if (!email || !password) return;
+ return await createUserWithEmailAndPassword(auth, email, password);
+}
+export const signInAuthUserWithEmailAndPassword = async (email, password) => {
+  if (!email || !password) return;
+ return await signInWithEmailAndPassword(auth, email, password);
 }
