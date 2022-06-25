@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyBHjTTHe2Yc5xG8hN_WTLBQng3foHJMr18",
+  authDomain: "daiensai.firebaseapp.com",
+  projectId: "daiensai",
+  storageBucket: "daiensai.appspot.com",
+  messagingSenderId: "786931908502",
+  appId: "1:786931908502:web:91928a522952c9be4a27b7",
+  measurementId: "G-N7KX6LXRS2"
+};

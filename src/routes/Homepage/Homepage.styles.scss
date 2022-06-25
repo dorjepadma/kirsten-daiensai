@@ -1,0 +1,33 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.daiensaiCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin:1em;
+  padding:1em;
+  border:1px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 
+  transform .4s,
+  background-color .4s,
+  box-shadow .4s;
+}
+
+.daiensaiCard:hover {
+  box-shadow: 0 15px 30px rgb(0 0 0 / 20%);
+  background-color: rgba (237, 248, 255, .52);
+  cursor: pointer; 
+  transform: translate(0, -4px)
+}
+
+.lineageLink {
+  color: #1ab2db;
+}
