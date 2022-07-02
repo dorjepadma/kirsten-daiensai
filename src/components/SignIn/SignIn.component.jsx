@@ -8,8 +8,9 @@ import {
 
 import FormInput from '../FormInput/FormInput.component';
 import Button from '../Button/Button.component';
+
 import './SignIn.styles.scss';
-import { errorPrefix } from '@firebase/util';
+
 //create user object
 const defaultFormFields = {
   email:'',
@@ -20,19 +21,23 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
+
   const resetForm = () => {
     setFormFields(defaultFormFields);
   }
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
+    await signInWithGooglePopup();
+
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await signInAuthUserWithEmailAndPassword(email, password);
+      const {user} = await signInAuthUserWithEmailAndPassword(email, password);
+
+
       resetForm();
     } catch (error) {
       switch(error.code) {
