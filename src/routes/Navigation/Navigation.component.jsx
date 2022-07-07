@@ -24,6 +24,7 @@ const Navigation = () => {
       <Link className='nav-link' to='/daiensaiPaintings'>Paintings</Link>
       <Link className='nav-link' to='/philosophy'>Philosophy</Link>
       <Link className='nav-link' to='/serpentPaintings'>Serpent</Link>
+      <Link  to="/Shop" className='nav-link'>Buy art</Link>
       {
   currentUser ? (
     <span className='nav-link' onClick={signOutUser}>SIGN OUT </span>

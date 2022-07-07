@@ -7,6 +7,7 @@ import './App.css';
 import Home from './routes/Homepage/Homepage.component'
 import Navigation from './routes/Navigation/Navigation.component'
 import Authentication from './routes/AuthenticationPage/Authentication.component'
+import Shop from './routes/shop/shop.component';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
       <Route path='/' element={<Navigation/>}>
       <Route index element={<Home />}/>
       <Route path='SignIn' index element={<Authentication />}/>
+      <Route  path='Shop' index element={<Shop />}/>
       </Route>
     </Routes>
     </div>
