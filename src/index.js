@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { CartProvider } from './Context/cart.context';
 
 import { UserProvider } from './Context/user.context';
 import { ProductsProvider} from './Context/products.context';
@@ -14,7 +15,9 @@ render(
       <BrowserRouter>
         <UserProvider >
           <ProductsProvider>
-          <App />
+            <CartProvider>
+              <App />
+            </CartProvider>
           </ProductsProvider>
         </UserProvider>
       </BrowserRouter>
